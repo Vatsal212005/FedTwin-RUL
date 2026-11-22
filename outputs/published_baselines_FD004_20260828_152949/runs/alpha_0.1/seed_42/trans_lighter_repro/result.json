@@ -1,0 +1,22 @@
+{
+  "method": "trans_lighter_repro",
+  "display_name": "Trans-Lighter (protocol-aligned)",
+  "origin": "Nguyen et al., Computers in Industry 148 (2023), 103888; DOI 10.1016/j.compind.2023.103888",
+  "baseline_type": "rul_specific_published",
+  "description": "Protocol-aligned reproduction of the published Trans-Lighter encoder-only federated Transformer architecture. Bayesian hyperparameter optimization from the original paper is not repeated; common study hyperparameters are used for fairness.",
+  "alpha": 0.1,
+  "seed": 42,
+  "best_round": 40,
+  "val_rmse": 27.256633758544922,
+  "val_mae": 21.88707733154297,
+  "val_r2": 0.6000661253929138,
+  "val_nasa": 90901.5390625,
+  "mean_client_rmse": 27.314870643615723,
+  "worst_client_rmse": 33.127960205078125,
+  "test_rmse": 27.60809898376465,
+  "test_mae": 21.78679847717285,
+  "test_r2": 0.587411642074585,
+  "test_nasa": 17661.263671875,
+  "train_seconds": 39.23966269986704,
+  "parameters": 34625
+}

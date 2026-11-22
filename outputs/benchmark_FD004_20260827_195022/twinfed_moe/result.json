@@ -1,0 +1,22 @@
+{
+  "method": "twinfed_moe",
+  "category": "proposed",
+  "description": "Full TwinFed-MoE.",
+  "mode": "federated",
+  "aggregation": "expertwise",
+  "best_round_or_epoch": 32,
+  "val_rmse": 24.006755828857422,
+  "val_mae": 18.180896759033203,
+  "val_r2": 0.6864705085754395,
+  "val_nasa": 137555.96875,
+  "mean_client_rmse": 23.998472213745117,
+  "worst_client_rmse": 32.782386779785156,
+  "shared_val_rmse": 26.718032836914062,
+  "personalization_gain_rmse": 2.7112770080566406,
+  "test_rmse": 28.479740142822266,
+  "test_mae": 20.03129005432129,
+  "test_r2": 0.5609480142593384,
+  "test_nasa": 21454.33203125,
+  "train_seconds": 180.07298739999533,
+  "parameters": 112227
+}

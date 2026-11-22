@@ -1,0 +1,19 @@
+{
+  "method": "fedtwin_rul",
+  "description": "FedTwin-RUL: lightweight Digital-Twin state concatenated with the temporal Transformer representation and trained with FedAvg.",
+  "alpha": 0.1,
+  "seed": 2027,
+  "best_round": 39,
+  "val_rmse": 22.52634048461914,
+  "val_mae": 16.779613494873047,
+  "val_r2": 0.7274733185768127,
+  "val_nasa": 91522.6328125,
+  "mean_client_rmse": 22.45259246826172,
+  "worst_client_rmse": 29.744678497314453,
+  "test_rmse": 24.67198944091797,
+  "test_mae": 18.73712730407715,
+  "test_r2": 0.6705023646354675,
+  "test_nasa": 12924.7109375,
+  "train_seconds": 72.66663779993542,
+  "parameters": 60159
+}

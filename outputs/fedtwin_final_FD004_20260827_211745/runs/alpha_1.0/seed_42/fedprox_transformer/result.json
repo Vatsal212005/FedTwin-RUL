@@ -1,0 +1,19 @@
+{
+  "method": "fedprox_transformer",
+  "description": "FedProx temporal Transformer baseline.",
+  "alpha": 1.0,
+  "seed": 42,
+  "best_round": 38,
+  "val_rmse": 25.064716339111328,
+  "val_mae": 18.831693649291992,
+  "val_r2": 0.6568512320518494,
+  "val_nasa": 107547.703125,
+  "mean_client_rmse": 24.68421039581299,
+  "worst_client_rmse": 30.31210708618164,
+  "test_rmse": 25.80095672607422,
+  "test_mae": 20.04401206970215,
+  "test_r2": 0.6396574378013611,
+  "test_nasa": 17251.7890625,
+  "train_seconds": 61.09237410011701,
+  "parameters": 37313
+}

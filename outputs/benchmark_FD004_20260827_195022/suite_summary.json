@@ -1,0 +1,20 @@
+{
+  "suite_dir": "outputs\\benchmark_FD004_20260827_195022",
+  "seed": 42,
+  "methods_requested": [
+    "centralized_transformer",
+    "local_only_transformer",
+    "fedavg_transformer",
+    "fedprox_transformer",
+    "fedper_transformer",
+    "fedavg_moe",
+    "twinfed_moe",
+    "ablation_no_dt",
+    "ablation_no_moe",
+    "ablation_no_personalization",
+    "ablation_no_tgc",
+    "ablation_fedavg_aggregation"
+  ],
+  "total_seconds_this_invocation": 1221.6939518,
+  "results_csv": "outputs\\benchmark_FD004_20260827_195022\\benchmark_results.csv"
+}

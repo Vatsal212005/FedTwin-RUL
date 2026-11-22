@@ -1,0 +1,22 @@
+{
+  "method": "local_only_transformer",
+  "category": "reference",
+  "description": "Independent local Transformer models with no federation.",
+  "mode": "local_only",
+  "aggregation": "",
+  "best_round_or_epoch": 17.9,
+  "val_rmse": 23.044870376586914,
+  "val_mae": 17.225900650024414,
+  "val_r2": 0.7110917568206787,
+  "val_nasa": 69714.171875,
+  "mean_client_rmse": 22.762082958221434,
+  "worst_client_rmse": 35.14820098876953,
+  "shared_val_rmse": 23.044870376586914,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": null,
+  "test_mae": null,
+  "test_r2": null,
+  "test_nasa": null,
+  "train_seconds": 12.114237100584432,
+  "parameters": 37313
+}

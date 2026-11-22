@@ -1,0 +1,23 @@
+{
+  "study_dir": "C:\\Users\\ironm\\OneDrive\\Desktop\\TwinFed-MoE\\outputs\\fedtwin_final_FD004_20260827_211745",
+  "methods": [
+    "fedavg_transformer",
+    "fedprox_transformer",
+    "fedavg_moe",
+    "fedtwin_rul"
+  ],
+  "alphas": [
+    1.0,
+    0.5,
+    0.1
+  ],
+  "seeds": [
+    42,
+    123,
+    2027
+  ],
+  "total_jobs": 36,
+  "elapsed_seconds_this_invocation": 0.017050999915227294,
+  "raw_results_csv": "C:\\Users\\ironm\\OneDrive\\Desktop\\TwinFed-MoE\\outputs\\fedtwin_final_FD004_20260827_211745\\raw_results.csv",
+  "mean_std_results_csv": "C:\\Users\\ironm\\OneDrive\\Desktop\\TwinFed-MoE\\outputs\\fedtwin_final_FD004_20260827_211745\\mean_std_results.csv"
+}

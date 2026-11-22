@@ -1,0 +1,20 @@
+{
+  "study_dir": "outputs\\published_baselines_FD004_20260828_152949",
+  "methods": [
+    "trans_lighter_repro"
+  ],
+  "alphas": [
+    1.0,
+    0.5,
+    0.1
+  ],
+  "seeds": [
+    42,
+    123,
+    2027
+  ],
+  "total_jobs": 9,
+  "raw_results": "outputs\\published_baselines_FD004_20260828_152949\\published_raw_results.csv",
+  "mean_std_results": "outputs\\published_baselines_FD004_20260828_152949\\published_mean_std.csv",
+  "elapsed_seconds": 351.70925690000877
+}

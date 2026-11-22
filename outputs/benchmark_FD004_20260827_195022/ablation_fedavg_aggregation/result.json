@@ -1,0 +1,22 @@
+{
+  "method": "ablation_fedavg_aggregation",
+  "category": "ablation",
+  "description": "Full architecture with ordinary FedAvg instead of expert-wise aggregation.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 36,
+  "val_rmse": 23.744525909423828,
+  "val_mae": 17.829206466674805,
+  "val_r2": 0.6932825446128845,
+  "val_nasa": 136681.9375,
+  "mean_client_rmse": 23.611558723449708,
+  "worst_client_rmse": 33.103607177734375,
+  "shared_val_rmse": 26.6893253326416,
+  "personalization_gain_rmse": 2.9447994232177734,
+  "test_rmse": 29.203248977661133,
+  "test_mae": 20.645606994628906,
+  "test_r2": 0.5383570194244385,
+  "test_nasa": 21572.01171875,
+  "train_seconds": 178.01109390007332,
+  "parameters": 112227
+}

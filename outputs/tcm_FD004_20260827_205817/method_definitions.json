@@ -1,0 +1,47 @@
+{
+  "dt_concat_fedavg": {
+    "category": "fusion_baseline",
+    "fusion_mode": "concat",
+    "aggregation": "fedavg",
+    "prox_mu": 0.0,
+    "use_dt_reconstruction": true,
+    "lambda_dt": 0.1,
+    "description": "Digital-Twin state concatenated with the Transformer representation, trained with FedAvg."
+  },
+  "tcm_fedavg": {
+    "category": "proposed_candidate",
+    "fusion_mode": "tcm",
+    "aggregation": "fedavg",
+    "prox_mu": 0.0,
+    "use_dt_reconstruction": true,
+    "lambda_dt": 0.1,
+    "description": "Twin-Conditioned Modulation of Transformer features with FedAvg."
+  },
+  "tcm_fedprox": {
+    "category": "proposed_candidate",
+    "fusion_mode": "tcm",
+    "aggregation": "fedavg",
+    "prox_mu": 0.001,
+    "use_dt_reconstruction": true,
+    "lambda_dt": 0.1,
+    "description": "Twin-Conditioned Modulation of Transformer features with FedProx."
+  },
+  "tcm_no_dt_reconstruction": {
+    "category": "ablation",
+    "fusion_mode": "tcm",
+    "aggregation": "fedavg",
+    "prox_mu": 0.001,
+    "use_dt_reconstruction": false,
+    "lambda_dt": 0.0,
+    "description": "TCM + FedProx without the Digital-Twin reconstruction auxiliary objective."
+  },
+  "tcm_identity_modulation": {
+    "category": "ablation",
+    "fusion_mode": "identity",
+    "aggregation": "fedavg",
+    "prox_mu": 0.001,
+    "use_dt_reconstruction": true,
+    "lambda_dt": 0.1,
+    "description": "FedProx Transformer with the same Digital-Twin auxiliary branch but no direct twin-conditioned feature modulation."
+  }
+}

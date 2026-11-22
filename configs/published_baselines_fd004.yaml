@@ -1,0 +1,36 @@
+device: auto
+output_dir: outputs
+
+data:
+  train_path: data/processed/FD004_train.npz
+  test_path: data/processed/FD004_test.npz
+  seq_len: 40
+  num_sensors: 14
+  rul_cap: 125
+  num_clients: 10
+  regime_affinity_weight: 0.20
+  val_fraction: 0.2
+  batch_size: 256
+
+model:
+  d_model: 64
+  nhead: 4
+  transformer_layers: 1
+  dim_feedforward: 128
+  dropout: 0.1
+
+training:
+  rounds: 40
+  local_epochs: 2
+  lr: 0.001
+  scaffold_lr: 0.01
+  weight_decay: 0.0001
+  amp: true
+  amp_dtype: float16
+
+study:
+  alphas: [1.0, 0.5, 0.1]
+  seeds: [42, 123, 2027]
+  methods:
+    - trans_lighter_repro
+    - scaffold_transformer

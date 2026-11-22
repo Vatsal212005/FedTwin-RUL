@@ -1,0 +1,22 @@
+{
+  "method": "fedper_transformer",
+  "category": "baseline",
+  "description": "FedPer-style Transformer with local personalization adapter.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 40,
+  "val_rmse": 23.727766036987305,
+  "val_mae": 17.90206527709961,
+  "val_r2": 0.6937154531478882,
+  "val_nasa": 114851.5,
+  "mean_client_rmse": 23.590226078033446,
+  "worst_client_rmse": 32.65668487548828,
+  "shared_val_rmse": 23.019054412841797,
+  "personalization_gain_rmse": -0.7087116241455078,
+  "test_rmse": 26.01089859008789,
+  "test_mae": 20.316852569580078,
+  "test_r2": 0.6337693929672241,
+  "test_nasa": 14197.7626953125,
+  "train_seconds": 50.38009689981118,
+  "parameters": 41505
+}

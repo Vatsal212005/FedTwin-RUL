@@ -1,0 +1,6 @@
+method_key,authors,year,title,venue,doi,comparison_status
+trans_lighter_repro,Nguyen et al.,2023,Trans-Lighter: A light-weight federated learning-based architecture for Remaining Useful Lifetime prediction,Computers in Industry,10.1016/j.compind.2023.103888,controlled_protocol_aligned_reproduction
+scaffold_transformer,Karimireddy et al.,2020,SCAFFOLD: Stochastic Controlled Averaging for Federated Learning,ICML / PMLR 119,,controlled_published_fl_baseline
+fedavg_transformer,Kamei and Taghipour,2023,A comparison study of centralized and decentralized federated learning approaches utilizing the transformer architecture for estimating remaining useful life,Reliability Engineering & System Safety,10.1016/j.ress.2023.109130,existing_protocol_aligned_baseline_family
+ghdr_fl,Chen et al.,2023,Remaining useful life prediction of turbofan engine using global health degradation representation in federated learning,Reliability Engineering & System Safety,10.1016/j.ress.2023.109511,literature_only_not_reproduced
+fedrul,Guo et al.,2023,FedRUL: A New Federated Learning Method for Edge-Cloud Collaboration Based Remaining Useful Life Prediction of Machines,IEEE/ASME Transactions on Mechatronics,10.1109/TMECH.2022.3195524,literature_only_not_reproduced

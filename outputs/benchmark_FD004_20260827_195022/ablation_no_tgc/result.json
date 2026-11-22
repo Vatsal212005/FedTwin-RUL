@@ -1,0 +1,22 @@
+{
+  "method": "ablation_no_tgc",
+  "category": "ablation",
+  "description": "TwinFed-MoE without Twin-Guided Consistency loss.",
+  "mode": "federated",
+  "aggregation": "expertwise",
+  "best_round_or_epoch": 32,
+  "val_rmse": 24.331323623657227,
+  "val_mae": 18.3632755279541,
+  "val_r2": 0.6779354810714722,
+  "val_nasa": 145189.03125,
+  "mean_client_rmse": 24.243973541259766,
+  "worst_client_rmse": 32.33795928955078,
+  "shared_val_rmse": 26.902353286743164,
+  "personalization_gain_rmse": 2.5710296630859375,
+  "test_rmse": 28.382892608642578,
+  "test_mae": 19.908716201782227,
+  "test_r2": 0.5639289617538452,
+  "test_nasa": 18167.259765625,
+  "train_seconds": 165.68235619994812,
+  "parameters": 112227
+}

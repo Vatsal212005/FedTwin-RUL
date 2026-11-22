@@ -1,0 +1,22 @@
+{
+  "method": "ablation_no_personalization",
+  "category": "ablation",
+  "description": "TwinFed-MoE without the local personalization adapter.",
+  "mode": "federated",
+  "aggregation": "expertwise",
+  "best_round_or_epoch": 38,
+  "val_rmse": 22.955408096313477,
+  "val_mae": 16.97032356262207,
+  "val_r2": 0.7133305072784424,
+  "val_nasa": 112623.0625,
+  "mean_client_rmse": 22.88460397720337,
+  "worst_client_rmse": 31.721923828125,
+  "shared_val_rmse": 22.955408096313477,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": 24.935182571411133,
+  "test_mae": 18.874937057495117,
+  "test_r2": 0.6634349226951599,
+  "test_nasa": 10160.341796875,
+  "train_seconds": 162.49076470010914,
+  "parameters": 108035
+}

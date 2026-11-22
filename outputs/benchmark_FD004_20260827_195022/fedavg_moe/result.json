@@ -1,0 +1,22 @@
+{
+  "method": "fedavg_moe",
+  "category": "baseline",
+  "description": "Sparse temporal MoE trained with ordinary FedAvg.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 40,
+  "val_rmse": 22.855510711669922,
+  "val_mae": 17.061363220214844,
+  "val_r2": 0.7158200740814209,
+  "val_nasa": 116763.296875,
+  "mean_client_rmse": 22.687279415130615,
+  "worst_client_rmse": 32.32600402832031,
+  "shared_val_rmse": 22.855510711669922,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": 24.275484085083008,
+  "test_mae": 18.63644790649414,
+  "test_r2": 0.6810080409049988,
+  "test_nasa": 7688.666015625,
+  "train_seconds": 75.5168271001894,
+  "parameters": 103877
+}

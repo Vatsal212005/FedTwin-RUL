@@ -1,0 +1,22 @@
+{
+  "method": "fedavg_transformer",
+  "category": "baseline",
+  "description": "FedAvg with a temporal Transformer backbone.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 34,
+  "val_rmse": 22.832456588745117,
+  "val_mae": 17.40388298034668,
+  "val_r2": 0.7163931131362915,
+  "val_nasa": 88784.9375,
+  "mean_client_rmse": 22.72860469818115,
+  "worst_client_rmse": 32.5737419128418,
+  "shared_val_rmse": 22.832456588745117,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": 24.912446975708008,
+  "test_mae": 19.661693572998047,
+  "test_r2": 0.664048433303833,
+  "test_nasa": 9484.763671875,
+  "train_seconds": 41.06155170011334,
+  "parameters": 37313
+}

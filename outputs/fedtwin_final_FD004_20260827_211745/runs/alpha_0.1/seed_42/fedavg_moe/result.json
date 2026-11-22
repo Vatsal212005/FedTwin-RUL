@@ -1,0 +1,19 @@
+{
+  "method": "fedavg_moe",
+  "description": "Sparse Top-2 temporal MoE with FedAvg.",
+  "alpha": 0.1,
+  "seed": 42,
+  "best_round": 30,
+  "val_rmse": 26.662076950073242,
+  "val_mae": 20.797237396240234,
+  "val_r2": 0.6173235774040222,
+  "val_nasa": 88008.171875,
+  "mean_client_rmse": 26.736153221130373,
+  "worst_client_rmse": 32.81975173950195,
+  "test_rmse": 25.465450286865234,
+  "test_mae": 19.512706756591797,
+  "test_r2": 0.6489680409431458,
+  "test_nasa": 9107.4921875,
+  "train_seconds": 103.45780540001579,
+  "parameters": 103877
+}

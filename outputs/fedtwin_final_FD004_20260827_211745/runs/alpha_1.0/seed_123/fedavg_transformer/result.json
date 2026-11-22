@@ -1,0 +1,19 @@
+{
+  "method": "fedavg_transformer",
+  "description": "FedAvg temporal Transformer baseline.",
+  "alpha": 1.0,
+  "seed": 123,
+  "best_round": 38,
+  "val_rmse": 25.85496711730957,
+  "val_mae": 19.27031707763672,
+  "val_r2": 0.6375834941864014,
+  "val_nasa": 151173.03125,
+  "mean_client_rmse": 25.849627113342287,
+  "worst_client_rmse": 34.945682525634766,
+  "test_rmse": 25.084327697753906,
+  "test_mae": 19.601716995239258,
+  "test_r2": 0.6593966484069824,
+  "test_nasa": 12576.7939453125,
+  "train_seconds": 50.48763659992255,
+  "parameters": 37313
+}

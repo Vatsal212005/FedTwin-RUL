@@ -1,0 +1,33 @@
+{
+  "source": "Newer TwinFed-MoE repository, including app/frontend",
+  "excluded_directory_counts": {
+    ".pytest_cache": 1,
+    ".venv": 1,
+    ".git": 1,
+    ".openai": 1,
+    "dist": 1,
+    "node_modules": 1,
+    "__pycache__": 8
+  },
+  "portable_pointer_files": [
+    "outputs/latest_benchmark.txt",
+    "outputs/latest_fedtwin_final.txt",
+    "outputs/latest_published_baselines.txt",
+    "outputs/latest_run.txt",
+    "outputs/latest_tcm.txt",
+    "outputs/latest_v2.txt"
+  ],
+  "checks": {
+    "source_byte_hashes": "pass except documented pointer changes",
+    "python_syntax_files": 68,
+    "replay_schema_and_checkpoint": "pass",
+    "fd004_engine_counts": {
+      "train": 249,
+      "test": 248
+    },
+    "literal_secret_pattern_scan": "no findings (not a guarantee)",
+    "firmware_or_hardware_connection": "not implemented or tested",
+    "verification_details": "VERIFY_RESULTS.json",
+    "archive_plan": "CRC check and SHA256 comparison of every included file"
+  }
+}

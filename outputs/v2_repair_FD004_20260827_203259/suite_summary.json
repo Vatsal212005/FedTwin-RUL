@@ -1,0 +1,18 @@
+{
+  "suite_dir": "outputs\\v2_repair_FD004_20260827_203259",
+  "seed": 42,
+  "methods": [
+    "fedper_residual_v2",
+    "twinfed_moe_v2",
+    "v2_no_dt",
+    "v2_no_moe",
+    "v2_no_personalization",
+    "v2_no_tgc",
+    "v2_fedavg_aggregation"
+  ],
+  "selection_metric": "shared_pooled_rmse",
+  "baseline_suite": "C:\\Users\\ironm\\OneDrive\\Desktop\\TwinFed-MoE\\outputs\\benchmark_FD004_20260827_195022",
+  "v2_results_csv": "outputs\\v2_repair_FD004_20260827_203259\\v2_results.csv",
+  "merged_results_csv": "outputs\\v2_repair_FD004_20260827_203259\\v2_vs_fixed_baselines.csv",
+  "elapsed_seconds_this_invocation": 950.4955334998667
+}

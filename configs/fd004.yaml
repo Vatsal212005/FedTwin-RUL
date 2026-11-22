@@ -1,0 +1,52 @@
+seed: 42
+device: auto
+output_dir: outputs
+
+data:
+  dataset: cmapss
+  subset: FD004
+  train_path: data/processed/FD004_train.npz
+  test_path: data/processed/FD004_test.npz
+  seq_len: 40
+  num_sensors: 14
+  rul_cap: 125
+  num_clients: 10
+  non_iid_alpha: 0.5
+  regime_affinity_weight: 0.20
+  val_fraction: 0.2
+  batch_size: 256
+
+model:
+  d_model: 64
+  nhead: 4
+  transformer_layers: 1
+  dim_feedforward: 128
+  num_experts: 4
+  top_k: 2
+  twin_latent_dim: 16
+  expert_hidden_dim: 128
+  adapter_hidden_dim: 32
+  dropout: 0.1
+
+training:
+  rounds: 40
+  local_epochs: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  prox_mu: 0.001
+  lambda_dt: 0.10
+  lambda_bal: 0.01
+  lambda_tgc: 0.01
+  amp: true
+  amp_dtype: float16
+  tgc_max_pairs: 256
+
+federated:
+  participation_rate: 1.0
+
+evaluation:
+  checkpoint_metric: pooled_rmse
+  checkpoint_mode: min
+  official_test_adapter_mode: bypass
+  save_predictions: true
+  save_routing: true

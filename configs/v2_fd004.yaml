@@ -1,0 +1,71 @@
+seed: 42
+device: auto
+output_dir: outputs
+
+data:
+  dataset: cmapss
+  subset: FD004
+  train_path: data/processed/FD004_train.npz
+  test_path: data/processed/FD004_test.npz
+  seq_len: 40
+  num_sensors: 14
+  rul_cap: 125
+  num_clients: 10
+  non_iid_alpha: 0.5
+  regime_affinity_weight: 0.20
+  val_fraction: 0.2
+  batch_size: 256
+
+model:
+  d_model: 64
+  nhead: 4
+  transformer_layers: 1
+  dim_feedforward: 128
+  num_experts: 4
+  top_k: 2
+  twin_latent_dim: 16
+  expert_hidden_dim: 128
+  adapter_hidden_dim: 32
+  dropout: 0.1
+
+  # Maximum client-local correction in normalized RUL units.
+  # 0.20 corresponds to at most +/-25 cycles with RUL cap 125.
+  personal_residual_scale: 0.20
+
+training:
+  rounds: 40
+  local_epochs: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  prox_mu: 0.001
+
+  lambda_dt: 0.10
+  lambda_bal: 0.01
+  lambda_tgc: 0.01
+
+  # Direct shared-head supervision + local personalized supervision.
+  # The two RUL losses are normalized by (1 + lambda_personal).
+  lambda_personal: 1.0
+
+  amp: true
+  amp_dtype: float16
+  tgc_max_pairs: 256
+
+federated:
+  participation_rate: 1.0
+
+evaluation:
+  # Official NASA test uses the shared head on unseen engines,
+  # so model selection must use the analogous shared validation path.
+  checkpoint_metric: shared_pooled_rmse
+  checkpoint_mode: min
+
+v2_suite:
+  methods:
+    - fedper_residual_v2
+    - twinfed_moe_v2
+    - v2_no_dt
+    - v2_no_moe
+    - v2_no_personalization
+    - v2_no_tgc
+    - v2_fedavg_aggregation

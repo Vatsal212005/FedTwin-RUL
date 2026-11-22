@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\caption{Performance under different client heterogeneity levels on C-MAPSS FD004. Results are mean $\pm$ standard deviation over three seeds.}
+\label{tab:fedtwin_heterogeneity}
+\begin{tabular}{llrrrr}
+\hline
+$\alpha$ & Method & Val. RMSE & Test RMSE & Test MAE & Test $R^2$ \\
+\hline
+1.0 & FedAvg-MoE & 24.91 $\pm$ 1.31 & 24.76 $\pm$ 0.51 & 18.87 $\pm$ 0.43 & 0.668 $\pm$ 0.014 \\
+1.0 & FedAvg Transformer & 24.81 $\pm$ 1.07 & 25.11 $\pm$ 0.19 & 19.39 $\pm$ 0.38 & 0.659 $\pm$ 0.005 \\
+1.0 & FedProx Transformer & 24.87 $\pm$ 1.12 & 25.58 $\pm$ 0.24 & 19.97 $\pm$ 0.12 & 0.646 $\pm$ 0.007 \\
+1.0 & FedTwin-RUL & 24.30 $\pm$ 0.62 & 24.20 $\pm$ 0.45 & 18.27 $\pm$ 0.27 & 0.683 $\pm$ 0.012 \\
+\hline
+0.5 & FedAvg-MoE & 23.00 $\pm$ 0.71 & 24.70 $\pm$ 0.38 & 18.83 $\pm$ 0.58 & 0.670 $\pm$ 0.010 \\
+0.5 & FedAvg Transformer & 23.11 $\pm$ 0.63 & 25.11 $\pm$ 0.16 & 19.35 $\pm$ 0.09 & 0.659 $\pm$ 0.004 \\
+0.5 & FedProx Transformer & 23.13 $\pm$ 0.68 & 25.19 $\pm$ 0.24 & 19.39 $\pm$ 0.04 & 0.657 $\pm$ 0.007 \\
+0.5 & FedTwin-RUL & 22.81 $\pm$ 0.85 & 24.45 $\pm$ 0.36 & 18.45 $\pm$ 0.30 & 0.676 $\pm$ 0.010 \\
+\hline
+0.1 & FedAvg-MoE & 24.98 $\pm$ 2.45 & 25.21 $\pm$ 0.23 & 19.03 $\pm$ 0.43 & 0.656 $\pm$ 0.006 \\
+0.1 & FedAvg Transformer & 25.13 $\pm$ 1.67 & 25.28 $\pm$ 0.53 & 19.67 $\pm$ 0.28 & 0.654 $\pm$ 0.015 \\
+0.1 & FedProx Transformer & 25.15 $\pm$ 1.70 & 25.38 $\pm$ 0.44 & 19.85 $\pm$ 0.10 & 0.651 $\pm$ 0.012 \\
+0.1 & FedTwin-RUL & 24.82 $\pm$ 2.06 & 24.46 $\pm$ 0.18 & 18.51 $\pm$ 0.21 & 0.676 $\pm$ 0.005 \\
+\hline
+\end{tabular}
+\end{table*}

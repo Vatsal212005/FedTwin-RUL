@@ -1,0 +1,22 @@
+{
+  "method": "centralized_transformer",
+  "category": "reference",
+  "description": "Centralized temporal Transformer reference.",
+  "mode": "centralized",
+  "aggregation": "",
+  "best_round_or_epoch": 37,
+  "val_rmse": 19.400835037231445,
+  "val_mae": 13.788296699523926,
+  "val_r2": 0.7952366471290588,
+  "val_nasa": 43368.34765625,
+  "mean_client_rmse": null,
+  "worst_client_rmse": null,
+  "shared_val_rmse": 19.400835037231445,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": 21.083189010620117,
+  "test_mae": 15.886308670043945,
+  "test_r2": 0.7593884468078613,
+  "test_nasa": 4118.0341796875,
+  "train_seconds": 19.094179400010034,
+  "parameters": 37313
+}

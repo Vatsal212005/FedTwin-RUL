@@ -1,0 +1,22 @@
+{
+  "method": "fedprox_transformer",
+  "category": "baseline",
+  "description": "FedProx with a temporal Transformer backbone.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 40,
+  "val_rmse": 22.746654510498047,
+  "val_mae": 16.958410263061523,
+  "val_r2": 0.7185206413269043,
+  "val_nasa": 98768.90625,
+  "mean_client_rmse": 22.660803985595702,
+  "worst_client_rmse": 31.65753936767578,
+  "shared_val_rmse": 22.746654510498047,
+  "personalization_gain_rmse": 0.0,
+  "test_rmse": 24.959041595458984,
+  "test_mae": 19.226144790649414,
+  "test_r2": 0.6627905368804932,
+  "test_nasa": 11399.462890625,
+  "train_seconds": 57.59778100019321,
+  "parameters": 37313
+}

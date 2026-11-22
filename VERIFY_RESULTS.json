@@ -1,0 +1,21 @@
+{
+  "test_forward": "pass (direct function invocation; pytest unavailable in original environment)",
+  "test_aggregation_runs": "pass (direct function invocation; pytest unavailable in original environment)",
+  "final_checkpoint_strict_load_and_forward": {
+    "parameters": 60159,
+    "prediction_shape": [
+      2
+    ],
+    "pass": true
+  },
+  "environment": {
+    "torch": "2.13.0+cu126",
+    "device": "cpu"
+  },
+  "frontend_production_build": {
+    "status": "pass",
+    "vite": "8.3.4",
+    "modules": 15,
+    "dependency_source": "copy of existing local node_modules; not included in ZIP"
+  }
+}

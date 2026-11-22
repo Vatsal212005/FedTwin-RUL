@@ -1,0 +1,22 @@
+{
+  "method": "ablation_no_moe",
+  "category": "ablation",
+  "description": "Digital Twin + Transformer + personalization, without MoE.",
+  "mode": "federated",
+  "aggregation": "fedavg",
+  "best_round_or_epoch": 40,
+  "val_rmse": 24.435270309448242,
+  "val_mae": 18.17788314819336,
+  "val_r2": 0.6751777529716492,
+  "val_nasa": 108588.6171875,
+  "mean_client_rmse": 24.049143600463868,
+  "worst_client_rmse": 33.32827377319336,
+  "shared_val_rmse": 23.244693756103516,
+  "personalization_gain_rmse": -1.1905765533447266,
+  "test_rmse": 25.438152313232422,
+  "test_mae": 18.77116584777832,
+  "test_r2": 0.6497201919555664,
+  "test_nasa": 15403.240234375,
+  "train_seconds": 121.57134070014581,
+  "parameters": 45599
+}

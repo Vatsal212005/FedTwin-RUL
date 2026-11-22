@@ -1,0 +1,22 @@
+{
+  "method": "ablation_no_dt",
+  "category": "ablation",
+  "description": "TwinFed-MoE without the Digital Twin state.",
+  "mode": "federated",
+  "aggregation": "expertwise",
+  "best_round_or_epoch": 31,
+  "val_rmse": 23.920007705688477,
+  "val_mae": 18.09111976623535,
+  "val_r2": 0.6887322664260864,
+  "val_nasa": 131114.25,
+  "mean_client_rmse": 23.848576545715332,
+  "worst_client_rmse": 32.666664123535156,
+  "shared_val_rmse": 27.553647994995117,
+  "personalization_gain_rmse": 3.6336402893066406,
+  "test_rmse": 30.92890739440918,
+  "test_mae": 22.03900718688965,
+  "test_r2": 0.48218685388565063,
+  "test_nasa": 25979.62109375,
+  "train_seconds": 152.26928120013326,
+  "parameters": 108069
+}

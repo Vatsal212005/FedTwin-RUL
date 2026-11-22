@@ -1,0 +1,16 @@
+{
+  "suite_dir": "outputs\\tcm_FD004_20260827_205817",
+  "seed": 42,
+  "methods": [
+    "dt_concat_fedavg",
+    "tcm_fedavg",
+    "tcm_fedprox",
+    "tcm_no_dt_reconstruction",
+    "tcm_identity_modulation"
+  ],
+  "selection_metric": "validation pooled RMSE",
+  "baseline_suite": "C:\\Users\\ironm\\OneDrive\\Desktop\\TwinFed-MoE\\outputs\\benchmark_FD004_20260827_195022",
+  "tcm_results_csv": "outputs\\tcm_FD004_20260827_205817\\tcm_results.csv",
+  "merged_results_csv": "outputs\\tcm_FD004_20260827_205817\\tcm_vs_fixed_baselines.csv",
+  "elapsed_seconds_this_invocation": 379.7041656000074
+}

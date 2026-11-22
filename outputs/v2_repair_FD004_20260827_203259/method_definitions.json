@@ -1,0 +1,93 @@
+{
+  "fedper_residual_v2": {
+    "category": "baseline_v2",
+    "use_digital_twin": false,
+    "use_moe": false,
+    "use_personalization": true,
+    "router_mode": "temporal",
+    "aggregation": "fedavg",
+    "prox_mu": 0.0,
+    "lambda_dt": 0.0,
+    "lambda_bal": 0.0,
+    "lambda_tgc": 0.0,
+    "description": "FedPer-style Transformer with directly supervised shared head and bounded client-local residual personalization."
+  },
+  "twinfed_moe_v2": {
+    "category": "proposed_v2",
+    "use_digital_twin": true,
+    "use_moe": true,
+    "use_personalization": true,
+    "router_mode": "twin",
+    "aggregation": "expertwise",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.1,
+    "lambda_bal": 0.01,
+    "lambda_tgc": 0.01,
+    "description": "TwinFed-MoE v2 with a directly supervised global RUL head and bounded local residual personalization."
+  },
+  "v2_no_dt": {
+    "category": "ablation_v2",
+    "use_digital_twin": false,
+    "use_moe": true,
+    "use_personalization": true,
+    "router_mode": "temporal",
+    "aggregation": "expertwise",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.0,
+    "lambda_bal": 0.01,
+    "lambda_tgc": 0.0,
+    "description": "TwinFed-MoE v2 without Digital Twin state."
+  },
+  "v2_no_moe": {
+    "category": "ablation_v2",
+    "use_digital_twin": true,
+    "use_moe": false,
+    "use_personalization": true,
+    "router_mode": "twin",
+    "aggregation": "fedavg",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.1,
+    "lambda_bal": 0.0,
+    "lambda_tgc": 0.0,
+    "description": "TwinFed-MoE v2 without the sparse MoE."
+  },
+  "v2_no_personalization": {
+    "category": "ablation_v2",
+    "use_digital_twin": true,
+    "use_moe": true,
+    "use_personalization": false,
+    "router_mode": "twin",
+    "aggregation": "expertwise",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.1,
+    "lambda_bal": 0.01,
+    "lambda_tgc": 0.01,
+    "description": "TwinFed-MoE v2 without local residual personalization."
+  },
+  "v2_no_tgc": {
+    "category": "ablation_v2",
+    "use_digital_twin": true,
+    "use_moe": true,
+    "use_personalization": true,
+    "router_mode": "twin",
+    "aggregation": "expertwise",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.1,
+    "lambda_bal": 0.01,
+    "lambda_tgc": 0.0,
+    "description": "TwinFed-MoE v2 without Twin-Guided Consistency loss."
+  },
+  "v2_fedavg_aggregation": {
+    "category": "ablation_v2",
+    "use_digital_twin": true,
+    "use_moe": true,
+    "use_personalization": true,
+    "router_mode": "twin",
+    "aggregation": "fedavg",
+    "prox_mu": 0.001,
+    "lambda_dt": 0.1,
+    "lambda_bal": 0.01,
+    "lambda_tgc": 0.01,
+    "description": "TwinFed-MoE v2 with ordinary FedAvg instead of expert-utilization-aware aggregation."
+  }
+}
